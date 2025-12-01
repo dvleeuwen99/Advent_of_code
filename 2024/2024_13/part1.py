@@ -1,6 +1,11 @@
 puzzles = []
 
-with open('input.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     AX, AY, BX, BY, PX, PY = None, None, None, None, None, None
     for line in file:
         if len(line) <= 3:

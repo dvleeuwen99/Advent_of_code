@@ -1,4 +1,9 @@
-with open('input.txt', "r") as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     input_text = file.read()  # Read the entire file content
 
 blocks = input_text.strip().split("\n\n")  # Split input into groups by blank lines

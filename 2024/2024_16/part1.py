@@ -6,7 +6,12 @@ dx = {'E': 1, 'S': 0, 'W': -1, 'N': 0}
 dy = {'E': 0, 'S': 1, 'W': 0, 'N': -1}
 
 maze = []
-with open('input.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     for line in file:
         # process each line
         maze.append((line.strip()))

@@ -1,4 +1,9 @@
-with open('test1.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     input = file.read().split( "\n\n" )
 
 grid = { ( x * 2, y ): c.replace( 'O', '[' )

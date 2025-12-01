@@ -1,4 +1,10 @@
-data = open("input.txt").read()
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
+    data = file.read()
 
 patterns, towels = data.split("\n\n")
 

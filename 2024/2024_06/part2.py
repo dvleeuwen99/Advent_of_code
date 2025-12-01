@@ -1,6 +1,11 @@
 from itertools import cycle
  
-with open('input.txt') as f:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as f:
     lines = [l.strip() for l in f.readlines()]
  
 ROWS = len(lines)

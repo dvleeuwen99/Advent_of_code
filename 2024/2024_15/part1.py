@@ -1,7 +1,12 @@
 input = []
 from math import sqrt
 
-with open('input.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     grid = dict()
     moves = []
     col = 0

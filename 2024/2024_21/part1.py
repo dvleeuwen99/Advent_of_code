@@ -3,7 +3,12 @@ input = []
 from collections import defaultdict
 from functools import cache
 
-with open('input.txt', 'r') as file:
+import os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'test1.txt')
+
+with open(file_path, 'r') as file:
     for line in file:
         # process each line
         input.append((line.strip()))

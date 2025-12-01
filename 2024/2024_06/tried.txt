@@ -1,0 +1,14 @@
+2092, too high
+1677, too low
+1807, too high
+1895, not right answer
+1742, not right answer
+
+right for test1:
+6 3 check
+7 6 check
+7 7 check
+8 1 not
+8 3 not
+9 7 check
+
